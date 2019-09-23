@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { Helmet } from "react-helmet"
 import "../styles/styles.scss"
 import { Link } from "gatsby"
 
@@ -75,6 +76,7 @@ const IndexPage = () => {
   }, [])
   return (
     <div>
+	  <Helmet>Paradox Software Development</Helmet>
       <div class="page-wrapper">
         <div class="sky">
           <div class="component-wrapper">
