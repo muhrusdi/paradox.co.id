@@ -6,9 +6,9 @@ import Container from 'Components/container'
 import { Helmet } from "react-helmet"
 import "./styles.css"
 import Particles from "react-particles-js"
-import img1 from "Images/img-1.png"
-import img2 from "Images/img-2.png"
-import img3 from "Images/img-3.png"
+import img1 from "Images/paradox-up.png"
+import img2 from "Images/paradox-down.png"
+import img3 from "Images/paradox-oval.png"
 
 const Nav = styled.nav`
   position: absolute;
@@ -29,7 +29,7 @@ const Layout = ({children}) => {
   const data = useStaticQuery(
     graphql`
       query {
-        logo: file(relativePath: {eq: "dauroh-logo-4.png"}) {
+        logo: file(relativePath: {eq: "paradox-pavicon.png"}) {
           childImageSharp {
             fixed(width: 40) {
               ...GatsbyImageSharpFixed
@@ -42,7 +42,7 @@ const Layout = ({children}) => {
   return (
     <>
       <Helmet>
-        <title>Dauroh</title>
+        <title>Paradox</title>
       </Helmet>
       <Particles
         style={{position: "absolute", zIndex: -1}}
@@ -103,7 +103,7 @@ const Layout = ({children}) => {
       <Nav>
       <Container>
         <Logo>
-          {/* <span><Img fixed={data.logo.childImageSharp.fixed}/></span> */}
+          <span><Img fixed={data.logo.childImageSharp.fixed}/></span>
           <h1>Paradox</h1>
         </Logo>
         </Container>

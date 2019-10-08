@@ -36,8 +36,8 @@ const Br = styled.br`
   }
 `
 const ImgStyled = styled(Img)`
-  top: 19px;
-  left: 8px;
+  top: 14px;
+    left: -2px;
 `
 
 const Home = () => {
@@ -45,7 +45,7 @@ const Home = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        textIcon: file(relativePath: {eq: "text-icon.png"}) {
+        textIcon: file(relativePath: {eq: "paradox-up.png"}) {
           childImageSharp {
             fixed(width: 60) {
               ...GatsbyImageSharpFixed
